@@ -18,7 +18,7 @@ article {
       flex-wrap: wrap;
 }
 
-article article section {
+article section {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -35,7 +35,7 @@ article article section {
           box-sizing: border-box;
 }
 
-article article section article section#selling-points {
+article #selling-points {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -43,7 +43,7 @@ article article section article section#selling-points {
       flex-basis: 100%;
 }
 
-article article pre {
+article pre {
   background: #000;
   border: 1px solid #ddd;
   color: #666;
@@ -58,12 +58,12 @@ article article pre {
   white-space: pre-wrap;
 }
 
-article article pre.before {
+article pre.before {
   float: left;
   width: 40%;
 }
 
-article article pre.after {
+article pre.after {
   float: right;
   width: 40%;
 }
