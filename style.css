@@ -11,7 +11,15 @@ body {
 }
 
 button {
-  background-color: blue;
+  background-color: #000;
+  border-color: #fff;
+  border-radius: 30px;
+  padding: 4px 8px;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 article {
@@ -85,7 +93,7 @@ h1 {
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: calc($padding + $padding);
+  padding: calc(16px + 16px);
   margin-bottom: 0px;
 }
 
