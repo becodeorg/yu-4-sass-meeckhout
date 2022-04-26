@@ -1,6 +1,7 @@
 @import "style";
-@import: "base";
+@import "base";
 
 body { 
-    background-color: $blue;
+    color: $blue;
+    background-color: $bg-new;
 }
