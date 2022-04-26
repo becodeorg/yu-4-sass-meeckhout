@@ -108,4 +108,15 @@ h6 {
 .warning {
   background-color: orange;
 }
-/*# sourceMappingURL=style.css.map */
+
+body {
+  color: blue;
+  background-color: #ebf2e1;
+}
+
+body article section {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=blue.css.map */

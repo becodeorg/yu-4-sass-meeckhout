@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
 }
 
-button.Blue {
+button {
   background-color: blue;
 }
 
@@ -28,7 +28,7 @@ article {
     flex-grow: 1;
     flex-basis: 45%;
     border: 1px silver solid;
-    @include box-shadow-styling;
+    @include box-shadow-styling();
     padding: $padding;
     margin: 16px;
     clear: both;

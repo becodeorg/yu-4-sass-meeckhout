@@ -1,5 +1,6 @@
-@import "style";
-@import "base";
+@import "./style.scss";
+$blue: blue;
+$bg-new: #ebf2e1;
 
 body {
     color: $red;
