@@ -119,4 +119,9 @@ body article section {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+body article section pre {
+  background: #fff;
+  border: none;
+}
 /*# sourceMappingURL=blue.css.map */

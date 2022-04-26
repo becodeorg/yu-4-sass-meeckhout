@@ -1,8 +1,22 @@
 @import "./style.scss";
-$blue: blue;
+$red: red;
 $bg-new: #ebf2e1;
 
-body {
+body { 
     color: $red;
     background-color: $bg-new;
+    
+    article section{
+        border: none;
+        box-shadow: none;
+
+        pre{
+            background: $white;
+            border: none;
+        }
+    }
+
+    h1, h2, h6 {
+        color: $red;
+    }
 }

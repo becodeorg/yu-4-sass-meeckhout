@@ -9,5 +9,10 @@ body {
     article section{
         border: none;
         box-shadow: none;
+
+        pre{
+            background: $white;
+            border: none;
+        }
     }
 }
