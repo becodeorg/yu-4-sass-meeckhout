@@ -1,22 +1,21 @@
-@import "./style.scss";
-$red: red;
-$bg-new: #ebf2e1;
+@use 'base';
+@use 'style';
 
 body { 
-    color: $red;
-    background-color: $bg-new;
+    color: base.$red;
+    background-color: base.$bg-new;
     
     article section{
         border: none;
         box-shadow: none;
 
         pre{
-            background: $white;
+            background: base.$white;
             border: none;
         }
     }
 
     h1, h2, h6 {
-        color: $red;
+        color: base.$red;
     }
 }

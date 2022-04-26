@@ -1,17 +1,16 @@
-@import "./style.scss";
-$blue: blue;
-$bg-new: #ebf2e1;
+@use 'base';
+@use 'style';
 
 body { 
-    color: $blue;
-    background-color: $bg-new;
+    color: base.$blue;
+    background-color: base.$bg-new;
     
     article section{
         border: none;
         box-shadow: none;
 
         pre{
-            background: $white;
+            background: base.$white;
             border: none;
         }
     }

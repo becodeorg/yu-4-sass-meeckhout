@@ -11,42 +11,35 @@ body {
 }
 
 button {
-  background-color: blue;
+  background-color: #000;
+  border-color: #fff;
+  border-radius: 30px;
+  padding: 4px 8px;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 article section {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  flex-grow: 1;
+  flex-basis: 45%;
   border: 1px silver solid;
-  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-          box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   padding: 16px;
   margin: 16px;
   clear: both;
   overflow: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 article #selling-points {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-grow: 2;
+  flex-basis: 100%;
 }
-
 article pre {
   background: #000;
   border: 1px solid #ddd;
@@ -61,12 +54,10 @@ article pre {
   display: block;
   white-space: pre-wrap;
 }
-
 article pre.before {
   float: left;
   width: 40%;
 }
-
 article pre.after {
   float: right;
   width: 40%;
@@ -85,11 +76,11 @@ h1 {
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: calc($padding + $padding);
+  padding: 32px;
   margin-bottom: 0px;
 }
 
-.messages, .success, .error, .warning {
+.messages, .warning, .error, .success {
   border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;
@@ -113,19 +104,14 @@ body {
   color: red;
   background-color: #ebf2e1;
 }
-
 body article section {
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
 body article section pre {
   background: #fff;
   border: none;
 }
-
 body h1, body h2, body h6 {
   color: red;
-}
-/*# sourceMappingURL=red.css.map */
+}/*# sourceMappingURL=red.css.map */
