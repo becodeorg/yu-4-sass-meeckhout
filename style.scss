@@ -1,5 +1,5 @@
-@import "stylesheet";
-// @import "mixin";
+@import "base";
+@import "mixin";
 
 body {
   font: 100% "Space Mono", monospace;
@@ -7,21 +7,17 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: $black;
-  background-image: radial-gradient(
-      #fff,
-      rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
+  background-image: radial-gradient($white,rgba(255, 255, 255, 0.2) 2px,transparent 40px),
     radial-gradient($white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
     radial-gradient($white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
-    radial-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.1) 2px,
-      transparent 30px
-    );
+    radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   background-attachment: fixed;
+}
+
+button.Blue {
+  background-color: blue;
 }
 
 article {
@@ -32,10 +28,8 @@ article {
     flex-grow: 1;
     flex-basis: 45%;
     border: 1px silver solid;
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    padding: 16px;
+    @include box-shadow-styling;
+    padding: $padding;
     margin: 16px;
     clear: both;
     overflow: auto;
@@ -56,7 +50,7 @@ article {
     margin-bottom: 1.6em;
     max-width: 100%;
     overflow: auto;
-    padding: 16px;
+    padding: $padding;
     display: block;
     white-space: pre-wrap;
   }
@@ -85,29 +79,29 @@ h1 {
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: 32px;
+  padding: calc($padding + $padding);
   margin-bottom: 0px;
 }
 
-.message,
-.success,
-.error,
-.warning {
+.messages {
   border: 1px solid #ccc;
-  padding: 16px;
+  padding: $padding;
   margin: 16px;
   color: #2748b3;
   background-color: $black;
 }
 
 .success {
+  @extend .messages;
   background-color: green;
 }
 
 .error {
+  @extend .messages;
   background-color: red;
 }
 
 .warning {
+  @extend .messages;
   background-color: orange;
 }
