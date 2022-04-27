@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
@@ -10,15 +11,28 @@ body {
   background-attachment: fixed;
 }
 
+.header {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
 button {
   background-color: #000;
+  font-size: 16px;
   border-color: #fff;
-  border-radius: 30px;
-  padding: 4px 8px;
+  border-radius: 12px;
+  width: 200px;
+  padding: 14px 40px;
 }
 button a {
   text-decoration: none;
   color: #fff;
+}
+
+.btn-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 article {
