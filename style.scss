@@ -1,11 +1,11 @@
 @import "base";
 @import "mixin";
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
 
 body {
-  font-family: 'Roboto ', sans-serif;
+  font-family: 'Roboto';
   font-size: 16px;
-  font-weight: 100;
   color: #2748b3;
   margin: 0px;
   padding: 0px;
@@ -19,8 +19,17 @@ body {
   background-attachment: fixed;
 }
 
-.header {
+.container {
+  width: 80%;
   text-align: center;
+}
+
+.header, .footer {
+  width: 100%;
+  position: fixed;        
+  background: $black;
+  padding: 10px 0;
+  color: #fff;
 }
 
 button {
@@ -30,6 +39,7 @@ button {
   border-radius: 12px; 
   width: 200px;
   padding: 14px 40px;
+  margin-left: 15px;
  
   a {
     text-decoration: none;
@@ -39,6 +49,7 @@ button {
 
 .btn-container {
   position: absolute;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%)
 }
@@ -96,6 +107,7 @@ h6 {
 }
 
 .footer {
+  bottom: 0;
   text-align: center;
   font-size: 1em;
   padding: calc(16px + 16px);
